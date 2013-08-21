@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        tools:context=".MainMenu" />
+
+    <TextView
+        android:id="@+id/tvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:text="@string/menu"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bBudget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:onClick="startBudget"
+            android:text="@string/coffee_budget" />
+
+        <ImageButton
+            android:id="@+id/bBudgetInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/info"
+            android:onClick="budgetToast"
+            android:src="@drawable/green_question" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bCompound"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:onClick="startCompoundSavings"
+            android:text="@string/compound_savings" />
+
+        <ImageButton
+            android:id="@+id/bCompoundInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/info"
+            android:onClick="compoundToast"
+            android:src="@drawable/green_question" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bTarget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:onClick="startTargetSavings"
+            android:text="@string/target_savings" />
+
+        <ImageButton
+            android:id="@+id/bTargetInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/info"
+            android:onClick="targetToast"
+            android:src="@drawable/green_question" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvSig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/signature"
+            android:textSize="8dp" >
+        </TextView>
+
+        <com.google.ads.AdView
+            android:id="@+id/adMob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvSig"
+            android:layout_alignParentLeft="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="a150569f46510cf"
+            ads:loadAdOnCreate="true"
+            android:gravity="bottom" >
+        </com.google.ads.AdView>
+    </RelativeLayout>
+
+</LinearLayout>

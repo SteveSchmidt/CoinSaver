@@ -1,0 +1,11 @@
+addition = 100;
+rate = .05;
+principal = 100;
+compound = 12;
+time = 37;
+
+
+answerDub = addition * ((Math.pow( (1+rate/compound), (compound * years -1)) / (rate / compound)) + principal * Math.pow( (1 + (rate / compound)),
+					(compound * years)));
+
+System.out.println(answerDub);

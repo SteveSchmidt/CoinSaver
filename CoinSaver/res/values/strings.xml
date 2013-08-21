@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="one">1</string>
+    <string name="twelve">12</string>
+    <string name="app_name">CoinSaver</string>
+    <string name="amt_spent">Amount spent per day:</string>
+    <string name="amt_start">Starting Amount:</string>
+    <string name="back">Back</string>
+    <string name="budget_buster">Budget Buster</string>
+    <string name="calculate">Calculate</string>
+    <string name="coffee_budget">Budget</string>
+    <string name="compound_savings">Compound Savings</string>
+    <string name="days">Days per month:</string>
+    <string name="greater"> > 0</string>
+    <string name="info">information</string>
+    <string name="interest">Interest Rate in %:</string>
+    <string name="menu"><u>Menu: Please select an activity</u></string>
+    <string name="menu_settings">Settings</string>
+    <string name="months">Months:</string>
+    <string name="months_per_year">Months Per Year:</string>
+    <string name="principal">Principal Amount:</string>
+    <string name="quit">Quit</string>
+    <string name="target_savings">Target Savings</string>
+    <string name="target_savings_goal">Target Savings Goal:</string>
+    <string name="compounded">compounded:</string>
+    <string name="added_amount">Monthly Contribution:</string>
+    <string name="signature">created by Steve Schmidt 2012</string>
+    <string name="title_activity_main_menu">CoinSaver</string>
+    <string name="total">Total:</string>
+    <string name="total_time">Total Time:</string>
+    <string name="years">Years:</string>
+    <string name="zero">>= 0</string>
+
+    <string-array name="times_compounded">
+        <item>daily</item>
+        <item>monthly</item>
+        <item>quarterly</item>
+        <item>yearly</item>
+    </string-array>
+
+</resources>
